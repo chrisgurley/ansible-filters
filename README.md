@@ -95,3 +95,13 @@ interface GigabitEthernet1/0/1
         msg: "{{ item | get_ranges }}"
       loop: "{{ unworkabletestdata }}"
 ```
+
+#### Testing
+
+You can run unittests from the `filter_plugins` directory
+
+```bash
+cd filter_plugins
+
+python -m unittest tests/get_ranges.py
+```
